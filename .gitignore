@@ -1,0 +1,48 @@
+# Local configuration and credentials
+/inventory*.json
+/config/*
+!/config/*.example.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+known_hosts*
+/.ssh/
+
+# Collected host data and generated reports
+/reports/
+*.log
+*.dump
+*.hprof
+*.db
+*.sqlite
+*.sqlite3
+
+# Python environments, caches and build output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local tools and publication review
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+/LOCAL_PUBLICATION_REVIEW.md

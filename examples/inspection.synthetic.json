@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "host": "synthetic.example.invalid",
+    "port": 22,
+    "user": "synthetic-user",
+    "time": "2026-01-01 00:00:00",
+    "modules": ["system", "cpu", "memory", "disk", "alert"],
+    "data_source": "Entirely synthetic fixture. No host was contacted. Values are illustrative."
+  },
+  "results": {
+    "system": {
+      "stdout": "=== 1.1 系统版本 ===\nUbuntu (synthetic fixture)\n=== 1.3 主机名 ===\nsynthetic-lab\n 00:00:00 up 1 day, 1 user, load average: 0.10, 0.20, 0.30\n",
+      "stderr": ""
+    },
+    "cpu": {
+      "stdout": "逻辑核心数: 4\n%Cpu(s): 10.0 us, 0.0 sy, 0.0 ni, 90.0 id\n0.10 0.20 0.30 1/10 100\n",
+      "stderr": ""
+    },
+    "memory": {
+      "stdout": "              total used free shared buff/cache available\nMem:          8.0G  2.0G 6.0G 0.0K 0.0K 6.0G\nSwap:         2.0G  0.0G 2.0G\n",
+      "stderr": ""
+    },
+    "disk": {
+      "stdout": "Filesystem Type Size Used Avail Use% Mounted on\n/dev/synthetic xfs 40G 36G 4G 90% /\n",
+      "stderr": ""
+    },
+    "alert": {
+      "stdout": "CPU使用率: 10.0%\n内存使用率: 25.0%\n告警: /dev/synthetic 40G 36G 4G 90% /\nSwap使用率: 0.0%\n最近失败登录次数: 0\n僵尸进程数: 0\n",
+      "stderr": ""
+    }
+  }
+}

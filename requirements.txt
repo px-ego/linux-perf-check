@@ -1,0 +1,4 @@
+# Direct dependencies used by the documented client and notification wrapper.
+# These versions were present in the local Python 3.11 verification environment.
+paramiko==5.0.0
+PyYAML==6.0.3

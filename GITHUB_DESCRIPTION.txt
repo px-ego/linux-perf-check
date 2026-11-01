@@ -1,0 +1,1 @@
+SSH-based Linux inspection with concurrent checks, text/JSON reports, HTML batch summaries, optional database diagnostics, and Feishu notifications.

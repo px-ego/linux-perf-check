@@ -1,0 +1,23 @@
+{
+  "servers": [
+    {
+      "alias": "Example Linux lab",
+      "host": "linux.example.invalid",
+      "port": 22,
+      "user": "inspector",
+      "auth": {
+        "type": "key",
+        "value": "~/.ssh/linux_perf_check"
+      },
+      "enabled": false,
+      "tags": ["lab"]
+    }
+  ],
+  "settings": {
+    "check_modules": "system,cpu,memory,alert",
+    "timeout": 30,
+    "module_timeout": 30,
+    "output_dir": "./reports",
+    "generate_html": true
+  }
+}

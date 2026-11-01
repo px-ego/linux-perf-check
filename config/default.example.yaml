@@ -1,0 +1,9 @@
+# Copy to config/default.yaml and fill in your own authorized lab target.
+# Only scripts/run_inspection_and_notify.py reads this file.
+# Empty host/user prevent this template from selecting a real target.
+server:
+  host: ""
+  port: 22
+  user: ""
+  key: ~/.ssh/linux_perf_check
+  check: system,cpu,memory,alert
